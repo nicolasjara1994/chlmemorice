@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chilean Legends</title>
+    <link rel="stylesheet" href="./css/styles.css" type="text/css">
+  </head>
+  <body>
+    <div class="encabezado">
+      <div>
+          <span>CHILEAN LEGENDS MEMORICE</span>
+    </div>
+      <div>
+        <span>Tiempo restante: <span id="tiempo"></span></span>
+      </div>
+      <div>
+        <button id="iniciar" class="btn-juego">Iniciar</button>
+        <button id="detener" disabled class="btn-juego detener">Rendirse</button>
+        <button id="reiniciar" disabled class="btn-juego reiniciar">Reiniciar</button>
+      </div>
+    </div>
+    <div class="container" id="tablero"></div>
+    <div id="perdiste" class="perdiste"><span>HAS PERDIDO, CAMPEÓN <br> SIGUE PRACTICANDO!</span></div>
+    <div id="ganaste" class="ganaste"><span>Felicidades, <br> GANASTE!!!</span></div>
+    <audio src="sounds/memorice.mp3" loop="3" autoplay="true"></audio>
+    <audio src="sounds/lose.mp3" display="none"></audio>
+    <script src="./js/funciones.js"></script>
+  </body>
+</html>
